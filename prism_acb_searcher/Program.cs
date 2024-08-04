@@ -40,13 +40,13 @@ foreach (string path in files)
 	{
 		// ファイルを「acb/」ディレクトリにコピーし、拡張子に「.acb」を追加します。
 		File.Copy(path, Path.Combine(out_directory, filename + ".acb"));
+
+		// コピーしたファイルの名前をコンソールに表示します。
+		Console.WriteLine(filename);
 	}
 	catch (IOException copyError)
 	{
 		// ファイルコピー中にエラーが発生した場合、エラーメッセージを表示します。
 		Console.WriteLine(copyError.Message);
 	}
-
-	// コピーしたファイルの名前をコンソールに表示します。
-	Console.WriteLine(filename);
 }
