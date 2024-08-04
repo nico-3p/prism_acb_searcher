@@ -1,1 +1,2 @@
 # prism_acb_searcher
+DMM版からACBファイルらしいファイルをコピーするツール
